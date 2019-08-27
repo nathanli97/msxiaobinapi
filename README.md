@@ -19,5 +19,11 @@
 
 注：你可以使用Chrome插件WebSocket Test Client来测试通信。
 
+注2：若使用HTTP协议，请参见simple-config-using-httpcallback.json配置好小冰回复消息回调地址，若要发送消息请使用GET协议发送请求:
+http://127.0.0.1:48975/?msg=消息内容
+或者使用POST协议发送请求：
+http://127.0.0.1:48975/
+POST数据内容为msg=消息内容
+
 ##已知问题
 目前此脚本可以接收小冰发来的文字及图片(图片通过BASE64编码后传递)，但是向小冰发送消息目前只能使用纯文本。
