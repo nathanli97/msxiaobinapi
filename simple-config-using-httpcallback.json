@@ -1,0 +1,19 @@
+{
+    "load_cookie_from_file": "cookie.txt",
+    "overwrite_cookie": "disabled",
+    "websocket": {
+        "status": "disabled",
+        "host": "0.0.0.0",
+        "port": 48975,
+        "worker_count": 4
+    },
+    "send_msg_via_http": {
+        "status": "enabled",
+        "host": "0.0.0.0",
+        "port": 48975,
+        "worker_count": 4
+    },
+    "recv_msg_http_callback": "http://localhost/callback?text={TEXT}&&type={TYPE}&&image={IMAGE}",
+    "recv_msg_http_callback_post": "enabled",
+    "recv_msg_http_callback_text_base64": "enabled"
+}
